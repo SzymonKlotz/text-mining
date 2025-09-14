@@ -13,8 +13,8 @@ library(syuzhet)
 library(dplyr)
 
 # Załadowania baz tesktowych zaimportowanych z bazy gutenberg.org
-bible_raw <- readLines("C:/Users/szymo/OneDrive - University of Gdansk (for Students)/Text Maining/Biblia.txt", encoding = "UTF-8") # Biblia
-quran_raw <- readLines("C:/Users/szymo/OneDrive - University of Gdansk (for Students)/Text Maining/Koran.txt", encoding = "UTF-8") # Koran
+bible_raw <- readLines("C:/Users/.../Biblia.txt", encoding = "UTF-8") # Biblia
+quran_raw <- readLines("C:/Users/.../Koran.txt", encoding = "UTF-8") # Koran
 
 # __Analiza występowania słów__
 
@@ -289,4 +289,5 @@ ggplot(avg_sentiment, aes(x = source, y = mean_sentiment, fill = source)) +
 # __________________________________________________________________________
 
 # Obie święte księgi mają wyraźnie duchowy i normatywny charakter, ale różnią się tonem.
+
 # Biblia częściej akcentuje relacje i obietnice, Koran częściej ostrzega i nakazuje.
